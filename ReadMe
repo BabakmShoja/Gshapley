@@ -1,0 +1,22 @@
+This is Gale-Shapley Algorithm to provide a perfect stable matching from preference lists of men and women who wants
+to be matched to the best possible. You can search for Gale-Shapley for more information.
+The project also checks if a matching is 1) a matching, 2) a perfect matching and 3) a stable matching.
+Commands to compile and use the Java codes in terminal is as follows. 
+
+// Compilation command: javac GShap.java
+// execution command for finding stable matching: java GShap find men women matching
+// execution command for checking a matching: java GShap check men women doubtful
+// men is preference list of men
+// women is preference list of women
+// matching is the name of output file showing matches
+// doutful is the matching list to be checked
+// It is assumed that the input preference lists are in a correct form and with the same size
+// It is assumed that there is no missing value for the pairs when it is in check mode. 
+// For example in the list of pairs there is number for the man but there is no number for woman. 
+// If this is the case, there is a for loop which is commented now. 
+// If you need to check the code with missing values like this, please uncomment that loop starting from line 180 to 208 in GShap.java file
+
+The project is implemented in an efficient way:
+- A queue data structure is used for men that are not matched yet
+- Stack data structure is used for the preference list.
+Both queue and stack data structures are developed from scratch which you can check as Java files.
